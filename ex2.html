@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  </head>
+  <body>
+    <form id="frm">
+      <h1>Give Your FeedBack</h1>
+      <input type="text" id="name" />
+      <input type="button" value="Submit" id="btn" rel="modal:open"/>
+    </form>
+    <div id="msg"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery("#btn").click(function () {
+          name = jQuery("#name").val();
+          if (name === "") {
+            jQuery("#msg").html("Please Enter Name");
+          } else {
+            jQuery("#frm").hide();
+            jQuery("#msg").html("Thanks: " + name);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
