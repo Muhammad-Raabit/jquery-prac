@@ -1,0 +1,40 @@
+git config --global user.name "Raabit" (set user for github if this user something edit) (Optional)
+git config --global user.email "Raabit@gmail.com" (set email for github if this user something edit) (Optional)
+git config --list (list user)
+
+git init (iniliaze local repo to git)
+rm -rf .git  (unIniliazed Local Repo);
+git clone (github repo link);
+git status (check staging area or commit area);
+git add (filename)(add staging area);
+git add . (add all files in statging area)
+git reset . (untrack all files in statging area)
+git commmit -m "any message about your file"
+git commit --amend (modify commit file)
+
+
+git log (commit info like id , auther ,email);
+git log --all (show all commit);
+git checkout (enter commit id) (switch another commit),
+
+git branch (check branch list)
+git branch branchName (create new branch)
+git checkout master (move master branch)
+git branch -d branchName (delete branch)
+git merge branchName (merge branch)
+
+git config --global alias.s "status"
+git config --global alias.cm "commit -m"
+git config --global alias.co "checkout"
+
+git remote add origin (HTTP Link Pasted) (add local repo to cloud )
+git config --global credential.username "Muhammad-Raabit"
+git push origin master
+git pull origin master
+git remote remove origin (remove connectivity)
+
+
+
+
+git remote -v (list remote repo connect)
+
